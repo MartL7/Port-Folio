@@ -8,6 +8,32 @@ window.addEventListener('focus', () => {
     document.title = Titulo;
 })
 
+const UrlApi = 'https://api.chucknorris.io/jokes/random';
+
+const Chiste = () => {
+    fetch(UrlApi)
+        .then(response => response.json())
+        .then(data => {
+            Swal.fire({
+                title: "Chiste Random",
+                html: `<span class="text-secondary"> ${data.value}</span>`,
+                icon: "question",
+                confirmButtonText: "Volver",
+                footer:
+                '<span class="text-secondary"> Gracias por reirte :) </span>',
+                allowOutsideClick: false,
+                buttonsStyling: false,
+                customClass: {
+                    popup: "bg-dark rounded-5",
+                    confirmButton: "btn btn-outline-light"
+                },
+            })
+        })
+        .catch(error => {
+            console.log(error.message);
+        })
+}
+
 function CambiarTema() {
     const Pagina = document.querySelector("html");
     const Icono = document.querySelector("#icon");
