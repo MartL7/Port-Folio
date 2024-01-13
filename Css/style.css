@@ -1,0 +1,435 @@
+body {
+    font-family: Onest Variable,system-ui,sans-serif;
+    background: #151a36 !important;
+    min-height: 100vh;
+}
+
+.Principal-Container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.Container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+/* Presentation */ 
+.Presentation {
+    border: 2px solid white;
+    box-shadow: inset 0 0 5px red, 0 0 10px red;
+    border-radius: 10px;
+}
+
+.Presentation {
+    display: flex;
+}
+
+.Presentation .Text-Presentation {
+    max-width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.Text-Presentation h1 {
+    padding: 15px;
+    color: #decece;
+    font-family: "Dancing Script", cursive;
+    margin: 0;
+    text-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px red, 0 0 50px red;
+}
+
+.Text-Presentation p {
+    color: #decece;
+    padding: 15px;
+    font-family: monospace;
+    margin: 0;
+    text-shadow: 0 0 5px yellow, 0 0 15px yellow, 0 0 30px yellow;
+    font-size: 20px;
+}
+
+.Presentation .Redes {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 10px;
+    margin-right: 1%;
+}
+
+.Redes li, i {
+    font-size: 25px;
+    transition: all 0.5s linear;
+}
+
+.Redes i:hover {
+    scale: 1.2;
+    color: #decece;
+}
+/*---------------------*/
+
+/* <- Image Profile -> */
+.Profile {
+    border: 2px solid white;
+    box-shadow: inset 0 0 5px red, 0 0 10px red;
+    border-radius: 10px;
+    height: auto;
+}
+
+.Profile img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s linear;
+    border-radius: 10px;
+}
+
+/*---------------------*/
+
+/* <- Dedication -> */
+.Dedication {
+    border: 2px solid white;
+    box-shadow: inset 0 0 5px red, 0 0 10px red;
+    border-radius: 10px;
+    height: auto;
+}
+
+.Dedication .Text-Dedicacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.Dedication h2 {
+    color: #decece;
+    font-size: 30px;
+    text-shadow: 0 0 5px blue, 0 0 15px blue, 0 0 30px blue;
+}
+/*---------------------*/
+
+
+/* <- Lenguajes -> */
+.Container-Lenguages {
+    border: 2px solid white;
+    box-shadow: inset 0 0 5px red, 0 0 10px red;
+    border-radius: 10px;
+    height: auto;
+    text-align: center;
+}
+
+
+.Container-Lenguages h4 {
+    color: #decece;
+    text-shadow: 0 0 5px purple, 0 0 15px purple, 0 0 30px purple;
+    font-size: 27px;
+}
+
+.Con-Lenguages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+}
+
+.Lenguages {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+.Lenguages li {
+    color: rgb(169, 184, 198);
+    transition: all 0.5s ease;
+}
+
+.Lenguages i:hover {
+    color: #decece;
+    scale: 1.2;
+}
+
+/*---------------------*/
+
+/* <- Scene -> */
+.Scene {
+    border: 2px solid white;
+    box-shadow: inset 0 0 5px red, 0 0 10px red;
+    border-radius: 10px;
+    height: auto;
+}
+
+.Scene img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+    cursor: grab;
+}
+
+.Scene img:hover {
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+/*---------------------*/
+
+/* <- Country -> */
+.Container-Country {
+    border: 2px solid white;
+    box-shadow: inset 0 0 5px red, 0 0 10px red;
+    border-radius: 10px;
+    height: auto;
+}
+
+.Country {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.Country h2 {
+    color: #decece;
+    text-shadow: 0 0 5px green, 0 0 15px green, 0 0 30px green;
+    font-size: 27px;
+}
+
+.Country img {
+    width: 100px;
+    transition: all 0.5s ease-in-out;
+}
+
+.Country img:hover {
+    scale: 1.1;
+    transition: all 0.5s ease-in-out;
+}
+/*---------------------*/
+
+/* <- Hour -> */
+.Hour {
+    border: 2px solid white;
+    box-shadow: inset 0 0 5px red, 0 0 10px red;
+    border-radius: 10px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Hour span {
+    color: #decece;
+    text-shadow: 0 0 5px orange, 0 0 15px orange, 0 0 30px orange;
+    font-size: 27px;
+
+}
+/*---------------------*/
+
+/* <- Cards -> */
+.card {
+    background: linear-gradient(to bottom, #151a36, #000000);
+}
+
+.card h5 {
+    text-shadow: 0 0 5px orange, 0 0 15px orange, 0 0 30px orange;
+    color:  #FFF;
+}
+
+.card p {
+    color: #c0b2b2;
+}
+
+.card a {
+    transition: all 0.5s ease-in-out;
+}
+
+.card a:hover {
+    color: rgb(156, 131, 99);
+}
+
+.card .Icon-Link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    width: 30px;
+    position: absolute;
+    top: 90%;
+    left: 5%;
+}
+
+.card .Icon-Code {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    width: 30px;
+    position: absolute;
+    top: 90%;
+    right: 0;
+}
+
+.Card-Secondary {
+    width: 400px;
+    border: 2px solid #333;
+    background: transparent;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.Card-Secondary h2 {
+    color: #decece;
+}
+
+.Card-Secondary p {
+    font-weight: 600;
+    padding: 10px;
+    color: rgb(209, 199, 187);
+}
+
+.Card-Secondary .Card-Lenguages {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    margin-top: -5%;
+}
+
+.Card-Secondary .Card-Icon i {
+    color: #decece;
+    opacity: 0;
+}
+
+.Card-Secondary:hover .Card-Icon i {
+    opacity: 1;
+
+}
+
+.Card-Secondary .Card-Icon {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.Text-Projects {
+    color: #a79d9d;
+}
+/*---------------------*/
+
+/* Ajuste de Grid */
+.Container .Presentation {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+.Container .Profile {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.Container .Dedication {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.Container .Container-Lenguages {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.Container .Scene {
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
+}
+
+.Container .Container-Country {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.Container .Hour {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+/*---------------------*/
+
+/* <- Socials -> */
+.Container-Socials {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Container-Socials h3 {
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+
+.Container-Socials .Socials {
+    height: 70px;
+    border: 2px solid #444;
+    border-radius: 15px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.Container-Socials .Socials:hover {
+    scale: 1.1;
+    border: 2px solid #151a36;
+    box-shadow: 0 0 5px #000000, 0 0 10px #000;
+    z-index: 10;
+}
+/*---------------------*/
+
+/* <- Media Queries -> */
+@media (width < 800px) {
+    .Container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .Container .Presentation {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+    
+    .Container .Profile {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    
+    .Container .Scene {
+        grid-column: 2 / 3;
+        grid-row: 2 / 4;
+    }
+
+    .Container .Dedication {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+    
+    .Container .Container-Lenguages {
+        grid-column: 1 / 3;
+        grid-row: 4 / 5;
+    }
+    
+    .Container .Container-Country {
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+    }
+    
+    .Container .Hour {
+        grid-column: 2 / 3;
+        grid-row: 5 / 6;
+    }
+
+    .Card-Secondary {
+        width: 300px;
+    }
+}
